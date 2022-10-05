@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: hotpink;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main_content {
+            width: 80%;
+            margin: 4rem auto;
+            background-color: black;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            position: relative;
+            box-shadow: 0 3px 10px black;
+        }
+
+        .product_image {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .text_container {
+            color: white;
+        }
+
+        .title {
+            color: hotpink;
+        }
+
+        .countdown_container {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            left: 0;
+            right: 0;
+            bottom: -25px;
+        }
+
+        .time_block {
+            background-color: hotpink;
+            color: white;
+            width: 18%;
+            text-align: center;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 1.5px 5px black;
+        }
+
+        .time_block p {
+            margin: 0;
+        }
+
+        @media (min-width:650px) {
+            .main_content {
+                width: 40%;
+            }
+
+            .image_container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_content">
+            <div class="image_container">
+                <img src="https://bit.ly/3SXAla1" alt="nike shoes" class="product_image">
+            </div>
+            <div class="text_container">
+                <h2 class="title">Nike's Jordan Giveaway</h2>
+                <p>Giveaway ends on Saturday, 15th October 2022. 18:30pm</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, error quibusdam voluptate
+                    ipsam, quo ipsa autem, illo illum laborum dicta reprehenderit rem ratione aperiam quod.</p>
+            </div>
+            <div class="countdown_container">
+                <div class="time_block">
+                    <p>10</p>
+                    <p>Days</p>
+                </div>
+                <div class="time_block">
+                    <p>4</p>
+                    <p>Hours</p>
+                </div>
+                <div class="time_block">
+                    <p>32</p>
+                    <p>Mins</p>
+                </div>
+                <div class="time_block">
+                    <p>55</p>
+                    <p>Secs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
